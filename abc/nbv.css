@@ -1,12 +1,7 @@
-#XN {
-    color: blue;
-    text-align: right;
+.Triều Tiên {
+    color: rgb(255, 0, 0);
+
 }
-#XN1 {
-    color:brown;
-    text-align: left;
-}
-#XN2 { 
-    color:green;
+div {
     text-align: center;
 }
