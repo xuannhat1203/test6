@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+
+    }
+
+    .container {
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "section article"
+            "section aside "
+            "section sign"
+            "footer sign";
+        grid-template-columns: 500px 250px 250px 200px;
+        grid-template-rows: 200px 250px 100px 100px 100px;
+
+    }
+
+    .header {
+        grid-area: header;
+        background-color: chocolate;
+    }
+
+    .section {
+        grid-area: section;
+        background-color: blue;
+    }
+
+    .article {
+        grid-area: article;
+        background-color: yellow;
+    }
+
+    .aside {
+        grid-area: aside;
+        background-color: blueviolet;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: darkgreen;
+
+    }
+
+    .sign {
+        grid-area: sign;
+        background-color: rgb(123, 22, 22);
+    }
+
+    h3 {
+        color: white;
+    }
+
+    p {
+        color: white;
+    }
+
+    button {}
+
+    .img1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .text1 {
+        position: relative;
+        bottom: 200px;
+    }
+    .text2 {
+        position:relative;
+        bottom :50px;
+    }
+    .text3 {
+        position: relative;
+        font-size: 14px;
+        bottom: 250px;
+    }
+    .text4 {
+        position: relative;
+        bottom: 100px;
+    }
+    .text6 {
+        position: relative;
+        top:40px;
+    }
+    .text7 {
+        position: relative;
+        top:120px;
+        left:90px;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../image/beach3.jpg" alt="" class="img1">
+            <div class="text1">
+                <h3> we like balloons</h3>
+                <p>you can find all kinds of balloon relaced things here</p>
+            </div>
+        </div>
+        <div class="section">
+            <img src="../image/nowornever.jpg" alt="" class="img1">
+            <div class="text2">
+                <h3>Special shapes</h3>
+                <p>why are some of them so crary looking</p>
+            </div>
+
+
+        </div>
+        <div class="article">
+            <img src="../image/cellphone.jpg" alt="" class="img1">
+            <div class="text3">
+                <h3>angry people at balloon fiestas</h3>
+                <p>Hot air balloon. A bit weather sénitive</p>
+            </div>
+        </div>
+        <div class="aside">
+            <img src="../image/sealions.jpg" alt="" class="img1">
+            <div class="text4">
+                <h3>Balloon photos</h3>
+                <p>I have quite afew</p>
+            </div>
+        </div>
+        <div class="footer">
+            <img width="500px" height="100px" src="../image/truck.jpg" alt="">
+            <div class="text4">
+                <h3>10 things you discover when taking a balloon ride.</h3>
+                <p>Number 8 will AMAZE you.</p>
+            </div>
+        </div>
+        <div class="sign">
+            <div class="text5">
+                <p class="text6">sign up for more information about balloons</p>
+                <button class="text7">Sign me up!</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

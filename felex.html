@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: ;
+        align-items: center;
+    }
+    .flex-item {
+        flex:1;
+         background-color: red;
+    }
+    .flex-item3 {
+        flex:1;
+    }
+</style>
+<body>
+    <!--FLEX CSS dùng để dàn layout
+    1.flex-container
+    2. flex-item
+    ********************
+    mặc định khi flex-direction: row thì trục main axis nằm ngang
+    Khi flex-direction;column thì trục cross-axis lại nằm ngang
+    trục main-axis ăn theo justify-content
+    trục cross-axis ăn theo align-item-->
+<div class="container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+</div>
+    
+</body>
+</html>

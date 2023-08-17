@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<!--reset css-->
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 200px 500px; /*200px 500px là chiều dài tương ứng của 2 hàng*/ 
+        grid-template-rows: minmax(50 auto) 200px;    /*100px 200px là độ rộng của 2 cột*/
+        width: 1000px;
+    }
+    .grid-item {
+        background-color: aqua;
+        border: 1px solid black;
+       
+    }
+    .item5 {
+        /*grid-row-start: 2;
+        grid-row-end: 4;*/
+        /*grid-column-start: 2;
+        grid-column-end: 4;*/
+        /* track là cái nằm giữa 2 line*/
+        /* area: khu vực */
+    }
+</style>
+<body>
+    <!--grid : giống như hệ thống lưới.-->
+    <div class="container">
+        <div class="gird-item">1</div>
+        <div class="gird-item">2</div>
+        <div class="gird-item">3</div>
+        <div class="gird-item">4</div>
+        <div class="gird-item item5">Lorem ipsum dolor sit amet.</div>
+    </div>
+</body>
+</html>

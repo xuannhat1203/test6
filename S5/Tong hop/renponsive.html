@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        background-color: aquamarine;
+
+    }
+    @media only and screen (max-width :768px) {
+      .container {
+        display: flex;
+        flex-direction:column;
+
+      }
+      .input {
+        width: 400px;
+      }
+      .btn {
+        background-color: blueviolet;
+      }
+        
+    }
+</style>
+
+<body>
+    <!--Responsive : là tương thích với các màn hình khác nhau
+    1. desktop first là viết trên giao diện máy tính trước sau đó mới xuống các giao diện tablet và mobile
+    2. mobile first là viết trên giao diện mobile trước sau đó mới lên các giao diện tablet và desktop 
+    Để responsive được thì phải nắm được breakpoint.
+    600px
+    768px
+    992px
+    1200px
+    1400px
+    >1400px
+    Cách để responsive:
+    + Cách 1 (mobile first) : 
+    min-width tức là độ dài màn hình bé nhất mà nó ăn
+    @media only screen and (min-width:600px){}
+    @media only screen and (min-width:768px){}
+    @media only screen and (min-width:992px){}
+    @media only screen and (min-width:1200px){}
+    + Cách 2 (desktop first) : 
+    max-width : tức giá trị màn hình lớn nhất thì nó ăn
+    @media only screen and (max-width:1400px) {}
+    @media only screen and (max-width:1200px) {}
+    @media only screen and (max-width:992px) {}
+    
+
+
+
+
+-->
+    <div class="container">
+        <input type="text" class="input"> 
+        <button class="btn">Search</button>
+    </div>
+</body>
+</html>

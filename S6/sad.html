@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        display: grid;
+        grid-template-areas:
+        "header header" 
+        "header header"
+        "section article"
+        "section aside"
+        "section inaside"
+        "footer inaside";
+        grid-template-columns: 500px 250px 250px 200px;
+        grid-template-rows: 200px 250px 100px 100px 100px;
+    }
+    .header {
+        grid-area: header;
+        border: 1px solid black;
+    }
+    .section {
+        grid-area: section;
+        border: 1px solid black;
+    }
+    .article {
+        grid-area: article;
+        border: 1px solid black;
+    }
+    .aside {
+        grid-area: aside;
+        border: 1px solid black;
+    }
+    .inaside {
+        grid-area: inaside;
+        border: 1px solid black;
+    }
+    .footer {
+        grid-area: footer;
+        border: 1px solid black;
+    }
+    .text1 {
+        position: relative;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header"><img width="748px" height="450px" src="../image/beach3.jpg" alt="">
+        <div class="text1">
+            <h3> we like balloons</h3>
+            <p>you can find all kinds of balloon relaced things here</p>
+        </div>
+    </div>       
+    <div class="section"><img width="500px" height="300px" src="../image/cellphone.jpg" alt="">
+        <div class="text1">
+            <h3> we like balloons</h3>
+            <p>you can find all kinds of balloon relaced things here</p>
+        </div>
+    </div>
+    <div class="article"><img width="248px" height="100px" src="../image/sealions.jpg" alt="">
+        <div class="text2">
+            <h3> we like balloons</h3>
+            <p>you can find all kinds of balloon relaced things here</p>
+        </div>
+    </div>
+    <div class="aside"><img width="248px" height="100px" src="../image/Screenshot 2023-08-10 095157.png" alt="">
+        <div class="text3">
+            <h3> we like balloons</h3>
+            <p>you can find all kinds of balloon relaced things here</p>
+        </div>
+    </div>
+    <div class="inaside"><img width="248px" height="244px" src="../image/nowornever.jpg" alt="">
+        <div class="text4">
+            <h3> we like balloons</h3>
+            <p>you can find all kinds of balloon relaced things here</p>
+    </div>
+    </div>
+    <div class="footer"><img width="500px" height="140px" src="../image/sealions.jpg" alt="">
+        <div class="text5">
+            <h3> we like balloons</h3>
+            <p>you can find all kinds of balloon relaced things here</p>
+            <button>ABC</button>
+        </div>
+    </div>
+    </div>
+
+    
+</body>
+</html>

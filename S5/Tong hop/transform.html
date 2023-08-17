@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 150px;
+    }
+
+    button {
+        width: 150px;
+        border: none;
+        border-radius: 5px;
+        position: relative;
+
+    }
+
+    span {
+        position: absolute;
+    }
+
+    .child1 {
+        width: 0%;
+        height: 3px;
+        background-color: green;
+        left: 0;
+        transition: all 2s linear;
+    }
+
+    .child2 {
+        width: 3px;
+        height: 0;
+        right: 0;
+        transition: all 2s linear 2s;
+        background-color: red;
+    }
+
+    button:hover .child1 {
+        width: 100%;
+
+    }
+
+    button:hover .child2 {
+        width: 3px;
+        height: 100%;
+    }
+
+    .child3 {
+        width: 0;
+        height: 0;
+        background-color: violet;
+        bottom: 0;
+        right: 0;
+        transition: all 2s linear 4s;
+    }
+
+    button:hover .child3 {
+        width: 100%;
+        height: 3px;
+    }
+
+    .child4 {
+        width: 0;
+        height: 0;
+        background-color: yellow;
+        left: 0;
+        bottom: 0;
+        transition: all 2s linear 6s;
+    }
+
+    button:hover .child4 {
+        width: 3px;
+        height: 100%
+    }
+</style>
+
+<body>
+    <!-- transtion -->
+    <div class="container">
+        <button>
+            Login
+            <span class="child1"></span>
+            <span class="child2"></span>
+            <span class="child3"></span>
+            <span class="child4"></span>
+        </button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+table,td,th {
+    border: none;
+}
+
+.padding1 {
+    padding-bottom: 50px;
+}
+
+.padding2 {
+    padding: 20px;
+}
+
+.padding3 {
+    padding: 20px;
+}
+
+.padding4 {
+    padding: 20px;
+}
+
+.padding5 {
+    padding: 20px;
+}
+

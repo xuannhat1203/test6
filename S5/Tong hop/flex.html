@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*đây là thằng cha*/
+    .container {
+        height: 600px;
+        background-color: aquamarine;
+        display: flex;
+        /*justify-content: center*/
+        /*align-items: center;*/ 
+    }
+    .box-one{
+       background-color: brown;
+       /*flex-grow:1*/
+    }
+    .box-two {
+        background-color: aliceblue;
+    }
+    .box-three {
+        background-color: bisque;
+    }
+</style>
+<body>
+<!--Flex:
+1. hai trục main-axis và cross-axis, 2 trục luôn luôn vuông góc với nhau
+2. trục main-axis thì ăn theo justify-content
+*justify-content
++center:căn đều giữa
++start-end:bên trái
++space-around:2 cạnh bên bằng 1 nửa cạnh bên trong
++space-between:căn đều từ 2 bên lề
++space-evenly :độ dài các cạnh đều bằng nhau
+3. Trục cross-axis ăn theo trục align-item
++stretch:ăn theo tất cả diện tích
++center
++end
++start
++baseline:ăn theo văn bản
+4. Nắm được flex-container && flex-item
+flex-container: tức là thằng cha
+flex-direction : mặc định là row thì main-axis nằm ngang
+flex-wrap:nowrap  || wrap
+flex-direction : column thì main axis nằm dọc
+flex-item: chỉ cần nhớ flex-grow : để cho flex-item chiếm hết nội dung còn lại flex-container 
+5. Thuộc tính của order
+chỉ áp dụng với flex-item
+flex-grow; tức là mình muốn flex-item chiếm hết diện tích của container-->
+<div class="container">
+    <div class="flex-item box-one">Box 1</div>
+    <div class="flex-item box-two">Box 2</div>
+    <div class="flex-item box-three">Box 3</div>
+
+</div>
+    
+</body>
+</html>
