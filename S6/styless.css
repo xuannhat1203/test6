@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+s
+/* video */
+
+/* header */
+header {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* position: absolute;
+  top: 0; */
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo,
+.search,
+.navbar {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* logo - img -icon facebook  */
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* list icon  facebook navbar  */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+/* search bar */
+.search {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    width: 600px;
+    height: 50px;
+    background-color: rgb(245, 248, 250);
+    opacity: 0.5;
+}
+
+.search input {
+    width: calc(100% - 50px);
+    height: 100%;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(245, 248, 250);
+}
+
+.search i {
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    opacity: 0.4;
+}
+
+/* main */
+main {
+    width: 100vw;
+    height: calc(100vh - 94px);
+    margin-top: 20px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* main navbar */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.one {
+    flex-grow: 2;
+}
+
+.two {
+    flex-grow: 8;
+}
+
+.three {
+    flex-grow: 2;
+}
+
+/*  */
+.main-mid {
+    width: 90% !important;
+}
+
+/*  */
+.block {
+    border: 1px solid black;
+    height: 100px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*  */
+.left {
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.mid {
+    flex-grow: 10;
+}
+
+.right {
+    flex-grow: 1;
+}
